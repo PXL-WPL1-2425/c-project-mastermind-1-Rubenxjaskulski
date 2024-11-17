@@ -11,7 +11,7 @@
             <ColumnDefinition Width="13*"/>
             <ColumnDefinition Width="67*"/>
         </Grid.ColumnDefinitions>
-        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="0,141,0,0" VerticalAlignment="Top" Width="120" Height="40" Grid.Column="1" >
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="0,141,0,0" VerticalAlignment="Top" Width="120" Height="40" Grid.Column="1" SelectionChanged="comboBox1_SelectionChanged" >
             <ComboBoxItem Content="Rood"/>
             <ComboBoxItem Content="Blauw"/>
             <ComboBoxItem Content="Geel"/>
@@ -19,29 +19,29 @@
             <ComboBoxItem Content="Oranje"/>
             <ComboBoxItem Content="Wit"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox2" Grid.Column="1" HorizontalAlignment="Left" Margin="120,141,0,0" VerticalAlignment="Top" Width="120" Height="40">
+        <ComboBox x:Name="comboBox2" Grid.Column="1" HorizontalAlignment="Left" Margin="120,141,0,0" VerticalAlignment="Top" Width="120" Height="40" SelectionChanged="comboBox2_SelectionChanged">
             <ComboBoxItem Content="Rood"/>
+            <ComboBoxItem Content="Blauw"/>
             <ComboBoxItem Content="Geel"/>
             <ComboBoxItem Content="Groen"/>
-            <ComboBoxItem Content="Blauw"/>
             <ComboBoxItem Content="Oranje"/>
             <ComboBoxItem Content="Wit"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox3" Grid.Column="1" HorizontalAlignment="Left" Margin="240,141,0,0" VerticalAlignment="Top" Width="120" Height="40">
+        <ComboBox x:Name="comboBox3" Grid.Column="1" HorizontalAlignment="Left" Margin="240,141,0,0" VerticalAlignment="Top" Width="120" Height="40" SelectionChanged="comboBox3_SelectionChanged">
             <ComboBoxItem Content="Rood"/>
+            <ComboBoxItem Content="Blauw"/>
             <ComboBoxItem Content="Geel"/>
             <ComboBoxItem Content="Groen"/>
             <ComboBoxItem Content="Oranje"/>
-            <ComboBoxItem Content="Blauw"/>
             <ComboBoxItem Content="Wit"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox4" Grid.Column="1" HorizontalAlignment="Left" Margin="360,141,0,0" VerticalAlignment="Top" Width="120" Height="40">
+        <ComboBox x:Name="comboBox4" Grid.Column="1" HorizontalAlignment="Left" Margin="360,141,0,0" VerticalAlignment="Top" Width="120" Height="40" SelectionChanged="comboBox4_SelectionChanged">
             <ComboBoxItem Content="Rood"/>
-            <ComboBoxItem Content="Geel"/>
-            <ComboBoxItem Content="Oranje"/>
             <ComboBoxItem Content="Blauw"/>
-            <ComboBoxItem Content="Wit"/>
+            <ComboBoxItem Content="Geel"/>
             <ComboBoxItem Content="Groen"/>
+            <ComboBoxItem Content="Oranje"/>
+            <ComboBoxItem Content="Wit"/>
         </ComboBox>
         <Button x:Name="codeKnop" Content="Check Code" HorizontalAlignment="Left" Margin="25,386,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Grid.Column="1" HorizontalAlignment="Left" Margin="2,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="71" Width="97">
@@ -54,9 +54,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name="label2" Grid.Column="1" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Center"/>
-        <Label x:Name="label3" Grid.Column="1" HorizontalAlignment="Left" Margin="300,204,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label4" Grid.Column="1" HorizontalAlignment="Left" Margin="402,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Grid.Column="1" HorizontalAlignment="Left" Margin="132,186,0,0" VerticalAlignment="Top" Height="71" Width="96"/>
+        <Label x:Name="label3" Grid.Column="1" HorizontalAlignment="Left" Margin="252,186,0,0" VerticalAlignment="Top" Width="96" Height="71"/>
+        <Label x:Name="label4" Grid.Column="1" HorizontalAlignment="Left" Margin="372,186,0,0" VerticalAlignment="Top" Width="96" Height="71"/>
 
 
     </Grid>
