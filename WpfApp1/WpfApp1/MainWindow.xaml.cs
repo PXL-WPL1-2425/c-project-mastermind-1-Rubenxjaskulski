@@ -11,23 +11,23 @@ using System.Windows.Shapes;
 
 
 namespace MijnMastermind
+
 {
+  
     public partial class MainWindow : Window
     {
-        private string[] beschikbareKleuren = { "Rood", "Geel", "Oranje", "Wit", "Groen", "Blauw" }; 
-        private string[] geheimeCode = new string[4]; 
-        private Random willekeurig = new Random(); 
+        private string[] beschikbareKleuren = { "Rood", "Geel", "Oranje", "Wit", "Groen", "Blauw" };
+        private string[] geheimeCode = new string[4];
+        private Random willekeurig = new Random();
 
         public MainWindow()
         {
-            InitializeComponent();
-            GenereerGeheimeCode(); 
+            
+            GenereerGeheimeCode();
+            
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         private void GenereerGeheimeCode()
         {
@@ -36,7 +36,6 @@ namespace MijnMastermind
                 geheimeCode[i] = beschikbareKleuren[willekeurig.Next(beschikbareKleuren.Length)];
             }
 
-            
             this.Title = "Geheime Code: " + string.Join(", ", geheimeCode);
         }
     }
