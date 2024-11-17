@@ -9,18 +9,35 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+
+namespace MijnMastermind
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private string[] beschikbareKleuren = { "Rood", "Geel", "Oranje", "Wit", "Groen", "Blauw" }; 
+        private string[] geheimeCode = new string[4]; 
+        private Random willekeurig = new Random(); 
+
         public MainWindow()
         {
             InitializeComponent();
+            GenereerGeheimeCode(); 
         }
 
-       
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void GenereerGeheimeCode()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                geheimeCode[i] = beschikbareKleuren[willekeurig.Next(beschikbareKleuren.Length)];
+            }
+
+            
+            this.Title = "Geheime Code: " + string.Join(", ", geheimeCode);
+        }
     }
 }

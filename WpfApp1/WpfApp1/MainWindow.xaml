@@ -5,17 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Mastermind" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>
             <ColumnDefinition Width="67*"/>
         </Grid.ColumnDefinitions>
-        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="0,141,0,0" VerticalAlignment="Top" Width="120" Height="40" Grid.Column="1" SelectionChanged="comboBox1_SelectionChanged"/>
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="0,141,0,0" VerticalAlignment="Top" Width="120" Height="40" Grid.Column="1" />
         <ComboBox x:Name="comboBox2" Grid.Column="1" HorizontalAlignment="Left" Margin="120,141,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
         <ComboBox x:Name="comboBox3" Grid.Column="1" HorizontalAlignment="Left" Margin="240,141,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
         <ComboBox x:Name="comboBox4" Grid.Column="1" HorizontalAlignment="Left" Margin="360,141,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
         <Button x:Name="codeKnop" Content="Check Code" HorizontalAlignment="Left" Margin="25,386,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Grid.Column="1" HorizontalAlignment="Left" Margin="2,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="71" Width="97">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.397"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label2" Grid.Column="1" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Center"/>
+        <Label x:Name="label3" Grid.Column="1" HorizontalAlignment="Left" Margin="300,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Grid.Column="1" HorizontalAlignment="Left" Margin="402,204,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>
